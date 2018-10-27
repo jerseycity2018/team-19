@@ -99,54 +99,57 @@ class SignUp extends Component {
           <Media object src={Logo} alt="GCF Logo" />
         </Media>
         <form onSubmit={this.handleSubmit}>
-          <label id="labelSignUp">Email </label>
-          &nbsp;&nbsp;
-          <input
-            type="text"
-            placeholder="Enter email"
-            value={this.state.email}
-            onChange={this.handleEmailChange}
-          />
-          <br />
-          <label id="labelSignUp">Password </label>
-          &nbsp;&nbsp;
-          <input
-            type="text"
-            placeholder="Enter password"
-            value={this.state.password}
-            onChange={this.handlePasswordChange}
-          />
-          <br />
-          <label id="labelSignUp">First Name </label>
-          &nbsp;&nbsp;
-          <input
-            type="text"
-            placeholder="First Name"
-            value={this.state.firstName}
-            onChange={this.handleFirstNameChange}
-          />
-          <br />
-          <label id="labelSignUp">Last Name </label>
-          &nbsp;&nbsp;
-          <input
-            type="text"
-            placeholder="Last Name"
-            value={this.state.lastName}
-            onChange={this.handleLastNameChange}
-          />
-          <br />
-          <label id="labelSignUp">Zipcode </label>
-          &nbsp;&nbsp;
-          <input
-            type="text"
-            placeholder="Zipcode"
-            value={this.state.zip}
-            onChange={this.handleZipChange}
-          />
+          <Container id="formSignUp">
+            <label id="labelSignUp">Email </label>
+            &nbsp;&nbsp;
+            <input
+              type="text"
+              placeholder="Enter email"
+              value={this.state.email}
+              onChange={this.handleEmailChange}
+            />
+            <br />
+            <label id="labelSignUp">Password </label>
+            &nbsp;&nbsp;
+            <input
+              type="text"
+              placeholder="Enter password"
+              value={this.state.password}
+              onChange={this.handlePasswordChange}
+            />
+            <br />
+            <label id="labelSignUp">First Name </label>
+            &nbsp;&nbsp;
+            <input
+              type="text"
+              placeholder="First Name"
+              value={this.state.firstName}
+              onChange={this.handleFirstNameChange}
+            />
+            <br />
+            <label id="labelSignUp">Last Name </label>
+            &nbsp;&nbsp;
+            <input
+              type="text"
+              placeholder="Last Name"
+              value={this.state.lastName}
+              onChange={this.handleLastNameChange}
+            />
+            <br />
+            <label id="labelSignUp">Zipcode </label>
+            &nbsp;&nbsp;
+            <input
+              type="text"
+              placeholder="Zipcode"
+              value={this.state.zip}
+              onChange={this.handleZipChange}
+            />
+          </Container>
           <br />
           <br />
           <button id="SignUpButton" disabled={!isEnabled}>Create Account! </button>
         </form>
+        
       </Container>
     );
   }
