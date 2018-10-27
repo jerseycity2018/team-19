@@ -91,10 +91,6 @@ class Admin extends Component {
 
     return (
       <Container className="Admin">
-        <Container>
-          <h1>Hello Isabella</h1>
-          <Link to="/home">Home</Link>
-        </Container>
         <Nav tabs>
           <NavItem>
             <NavLink
