@@ -27,7 +27,7 @@ class Home extends Component {
     return (
         <Container className="Home">
             <Container className="Greetings">
-                <h1> Hello, Fran!</h1>
+                <h1> Hello, Jimmy!</h1>
             </Container>
             <Nav tabs>
                 <NavItem>
@@ -68,7 +68,8 @@ class Home extends Component {
                     <Container className="usrData">
                     <h4>Volunteered for 4 hours!</h4>
                     <h4>Donated 20 pounds of compost!</h4>
-                    <h4>Refered 5 friends!</h4>
+                    <h4>Refered 2 friends!</h4>
+					<h4>You have 28 points!</h4>
                     </Container>
                    <PieChart
                    cx = {40}
@@ -89,12 +90,12 @@ class Home extends Component {
                     <Row>
                         <Col sm="6">
                             <Card body>
-                                <CardTitle>&nbsp; Borough Rankings</CardTitle>
+                                <CardTitle>&nbsp; Farm Rankings</CardTitle>
                                 <Table>
                                     <thead>
                                     <tr>
                                         <th>Rank</th>
-                                        <th>Borough</th>
+                                        <th>Farm</th>
                                         <th>Work (hr)</th>
                                         <th>Compost (lb)</th>
                                         <th>Score</th>
@@ -103,24 +104,24 @@ class Home extends Component {
                                     <tbody>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>Brooklyn</td>
+                                        <td>Bay View Houses</td>
                                         <td>27</td>
                                         <td>217</td>
                                         <td>234</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
-                                        <td>Bronx</td>
+                                        <td>Howard Houses</td>
                                         <td>22</td>
                                         <td>180</td>
                                         <td>202</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
-                                        <td>Staten Island</td>
+                                        <td>Forest Houses</td>
                                         <td>18</td>
-                                        <td>199</td>
-                                        <td>217</td>
+                                        <td>161</td>
+                                        <td>179</td>
                                     </tr>
                                     </tbody>
                                 </Table>
@@ -173,8 +174,8 @@ class Home extends Component {
                         <Col sm="12">
 							<Card body>
 							<center><CardTitle id ="App"><h3>Rewards List</h3></CardTitle>
-								<h4>Total Points Accumulated: </h4>
-								<h4>Current Points: </h4></center>
+								<h4>Total Points Accumulated: 28</h4>
+								<h4>Current Points: 28</h4></center>
 								<Table>
 									<thead>
 									<tr>
@@ -185,15 +186,15 @@ class Home extends Component {
 									<tbody>
 										<tr>
 											<th scope="row">LED Lightbulb</th>
-											<td>5000</td>
+											<td>10</td>
 										</tr>
 										<tr>
 											<th scope="row">Bundle of crops for the season</th>
-											<td>10000</td>
+											<td>20</td>
 										</tr>
 										<tr>
 											<th scope="row">Various Seed Bags for a Garden</th>
-											<td>30000</td>
+											<td>30</td>
 										</tr>
 									</tbody>
 								</Table>
@@ -210,33 +211,28 @@ class Home extends Component {
                                 <thead>
                                 <tr>
                                     <th>Email</th>
-                                    <th>Work (hrs)</th>
-                                    <th>Compost (lbs)</th>
                                     <th>Task</th>
-                                    <th>Score</th>
+                                    <th>Point Change</th>
                                     <th>Date</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>gmiller@nyc.com</td>
-                                    <td>7</td>
-                                    <td>32</td>
-                                    <td>39</td>
+                                    <td>jimmy@jpm.com</td>
+                                    <td>Compost Donation</td>
+                                    <td>+8</td>
+                                    <td>10/25</td>
+                                </tr>
+                                <tr>
+                                    <td>jimmy@jpm.com</td>
+                                    <td>Compost Donation</td>
+                                    <td>+12</td>
                                     <td>10/22</td>
                                 </tr>
                                 <tr>
-                                    <td>kmorgan@jpm.com</td>
-                                    <td>5</td>
-                                    <td>29</td>
-                                    <td>34</td>
-                                    <td>10/21</td>
-                                </tr>
-                                <tr>
-                                    <td>chershey@nyc.com</td>
-                                    <td>2</td>
-                                    <td>31</td>
-                                    <td>33</td>
+                                    <td>jimmy@jpm.com</td>
+                                    <td>Volunteer Hours</td>
+                                    <td>+4</td>
                                     <td>10/21</td>
                                 </tr>
                                 </tbody>
