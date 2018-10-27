@@ -95,12 +95,3 @@ label#labelSignUp {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
-
-div#left.col {
-  width: 50%;
-  margin-left: 0%;
-}
-
-div#right.col {
-  width: 50%;
-}
