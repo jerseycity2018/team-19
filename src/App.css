@@ -118,3 +118,35 @@ label#labelSignUp {
 #LogInInput {
   margin-bottom: 0.5em;
 }
+
+.Greetings.container {
+  color: white;
+  background-color: #542213;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #542213;
+  border-top: 1px solid #542213;
+}
+
+div.Home.container {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+#nav-links {
+  color: #A1AF00;
+}
+
+ul.nav.nav-tabs {
+  background-color: #542213;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: white;
+}
+
+.nav-tabs>li>a:hover {
+  border-color: white;
+}

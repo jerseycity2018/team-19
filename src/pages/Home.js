@@ -32,6 +32,7 @@ class Home extends Component {
             <Nav tabs>
                 <NavItem>
                     <NavLink
+                    id="nav-links"
                     className={classnames({ active: this.state.activeTab === '1' })}
                     onClick={() => { this.toggle('1'); }}
                     >
@@ -40,6 +41,7 @@ class Home extends Component {
                 </NavItem>
                 <NavItem>
                     <NavLink
+                    id="nav-links"
                     className={classnames({ active: this.state.activeTab === '2' })}
                     onClick={() => { this.toggle('2'); }}
                     >
@@ -48,6 +50,7 @@ class Home extends Component {
                 </NavItem>
                 <NavItem>
                     <NavLink
+                    id="nav-links"
                     className={classnames({ active: this.state.activeTab === '3' })}
                     onClick={() => { this.toggle('3'); }}
                     >
@@ -56,6 +59,7 @@ class Home extends Component {
                 </NavItem>
                 <NavItem>
                     <NavLink
+                    id="nav-links"
                     className={classnames({ active: this.state.activeTab === '1' })}
                     onClick={() => { this.toggle('4'); }}
                     >
