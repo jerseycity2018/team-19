@@ -160,7 +160,33 @@ class Home extends Component {
                 <TabPane tabId="3">
                     <Row>
                         <Col sm="12">
-                            <h4>Tab 3 Contents</h4>
+							<Card body>
+							<center><CardTitle id ="App"><h3>Rewards List</h3></CardTitle>
+								<h4>Total Points Accumulated: </h4>
+								<h4>Current Points: </h4></center>
+								<Table>
+									<thead>
+									<tr>
+										<th>Reward</th>
+										<th>Point Value</th>
+									</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">LED Lightbulb</th>
+											<td>5000</td>
+										</tr>
+										<tr>
+											<th scope="row">Bundle of crops for the season</th>
+											<td>10000</td>
+										</tr>
+										<tr>
+											<th scope="row">Various Seed Bags for a Garden</th>
+											<td>30000</td>
+										</tr>
+									</tbody>
+								</Table>
+							</Card>
                         </Col>
                     </Row>
                 </TabPane>
