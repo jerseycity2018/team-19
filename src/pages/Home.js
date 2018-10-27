@@ -3,6 +3,7 @@ import {Tabs, Tab} from 'react-bootstrap-tabs';
 import { Container, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Table } from 'reactstrap'
 import classnames from 'classnames';
 import '../App.css';
+//import * as d3 from "d3";
 
 class Home extends Component {
     
@@ -24,7 +25,7 @@ class Home extends Component {
     }
   render() {
     return (
-      <div>
+      <Container>
         <Container className="Greetings">
             <h1> Hello, Michael!</h1>
         </Container>
@@ -208,7 +209,8 @@ class Home extends Component {
                 </Row>
             </TabPane>
             </TabContent>
-      </div>
+      
+      </Container>
     );
     }
 }
