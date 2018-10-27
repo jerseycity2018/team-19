@@ -27,7 +27,7 @@ class Home extends Component {
     return (
         <Container className="Home">
             <Container className="Greetings">
-                <h1> Hello!</h1>
+                <h1> Hello Fran!</h1>
             </Container>
             <Nav tabs>
                 <NavItem>
@@ -57,16 +57,21 @@ class Home extends Component {
             </Nav>
             <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="1">
+                    <Container className="usrData">
+                    <h4>Volunteered for 4 hours!</h4>
+                    <h4>Donated 20 pounds of compost!</h4>
+                    <h4>Refered 5 friends!</h4>
+                    </Container>
                    <PieChart
                    cx = {40}
-                   cy = {30}
+                   cy = {25}
                    radius = {20}
                      data={[
                          { title: 'One', value: 15, color: '#78C776'},
                          { title: 'Two', value: 10, color: '#6D3521'},
                          ]}
                          animate = {true}
-                        />;
+                        />
                     <Row>
                         <Col sm="12">
                         </Col>
