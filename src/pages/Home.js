@@ -4,6 +4,7 @@ import { Container, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, Ca
 import classnames from 'classnames';
 import '../App.css';
 //import * as d3 from "d3";
+import PieChart from 'react-minimal-pie-chart';
 
 class Home extends Component {
     
@@ -57,11 +58,16 @@ class Home extends Component {
             </Nav>
             <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="1">
-                    <svg width="720" height="120">
-                        <circle cx="40" cy="60" r="10"></circle>
-                        <circle cx="80" cy="60" r="10"></circle>
-                        <circle cx="120" cy="60" r="10"></circle>
-                    </svg>
+                   <PieChart
+                   cx = {40}
+                   cy = {30}
+                   radius = {20}
+                     data={[
+                         { title: 'One', value: 15, color: '#78C776'},
+                         { title: 'Two', value: 10, color: '#6D3521'},
+                         { title: 'Three', value: 10, color: '#E2F01B'},
+                         ]}
+                        />;
                     <Row>
                         <Col sm="12">
                         </Col>
