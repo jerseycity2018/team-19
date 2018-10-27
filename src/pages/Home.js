@@ -32,6 +32,7 @@ class Home extends Component {
             <Nav tabs>
                 <NavItem>
                     <NavLink
+                    id="nav-links"
                     className={classnames({ active: this.state.activeTab === '1' })}
                     onClick={() => { this.toggle('1'); }}
                     >
@@ -40,6 +41,7 @@ class Home extends Component {
                 </NavItem>
                 <NavItem>
                     <NavLink
+                    id="nav-links"
                     className={classnames({ active: this.state.activeTab === '2' })}
                     onClick={() => { this.toggle('2'); }}
                     >
@@ -48,6 +50,7 @@ class Home extends Component {
                 </NavItem>
                 <NavItem>
                     <NavLink
+                    id="nav-links"
                     className={classnames({ active: this.state.activeTab === '3' })}
                     onClick={() => { this.toggle('3'); }}
                     >
@@ -56,6 +59,7 @@ class Home extends Component {
                 </NavItem>
                 <NavItem>
                     <NavLink
+                    id="nav-links"
                     className={classnames({ active: this.state.activeTab === '1' })}
                     onClick={() => { this.toggle('4'); }}
                     >
@@ -66,6 +70,7 @@ class Home extends Component {
             <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="1">
                     <Container className="usrData">
+                    <h3>Your stats:</h3>
                     <h4>Volunteered for 4 hours!</h4>
                     <h4>Donated 20 pounds of compost!</h4>
                     <h4>Refered 2 friends!</h4>
