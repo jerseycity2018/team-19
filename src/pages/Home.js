@@ -70,22 +70,26 @@ class Home extends Component {
             <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="1">
                     <Container className="usrData">
-                    <h3>Your stats:</h3>
-                    <h4>Volunteered for 4 hours!</h4>
-                    <h4>Donated 20 pounds of compost!</h4>
-                    <h4>Refered 2 friends!</h4>
-					<h4>You have 28 points!</h4>
+                        <h3 id="HomeTitle">Your stats:</h3>
+                        <h4>Volunteered for 4 hours!</h4>
+                        <h4>Donated 20 pounds of compost!</h4>
+                        <h4>Referred 2 friends!</h4>
+                        <h4>You have 28 points!</h4>
+                        <h4>Current Rank: Bronze</h4>
                     </Container>
                    <PieChart
-                   cx = {40}
-                   cy = {25}
-                   radius = {20}
-                     data={[
-                         { title: 'One', value: 15, color: '#78C776'},
-                         { title: 'Two', value: 10, color: '#6D3521'},
-                         ]}
-                         animate = {true}
-                        />
+                        cx = {40}
+                        cy = {25}
+                        radius = {20}
+                        data={[
+                            { title: 'One', value: 15, color: '#78C776'},
+                            { title: 'Two', value: 10, color: '#6D3521'},
+                        ]}
+                        animate = {true}
+                    />
+                    <Container>
+                        <h4 id="usrDataBottom">178 Points to Silver</h4>
+                    </Container>
                     <Row>
                         <Col sm="12">
                         </Col>
@@ -178,7 +182,7 @@ class Home extends Component {
                     <Row>
                         <Col sm="12">
 							<Card body>
-							<center><CardTitle id ="App"><h3>Rewards List</h3></CardTitle>
+							<center><CardTitle><h3>Rewards List</h3></CardTitle>
 								<h4>Total Points Accumulated: 28</h4>
 								<h4>Current Points: 28</h4></center>
 								<Table>
@@ -201,6 +205,53 @@ class Home extends Component {
 											<th scope="row">Various Seed Bags for a Garden</th>
 											<td>30</td>
 										</tr>
+                                        <tr>
+											<th scope="row">Grease disposer</th>
+											<td>40</td>
+										</tr>
+                                        <tr>
+											<th scope="row">Reusable produce bags</th>
+											<td>50</td>
+										</tr>
+                                        <tr>
+											<th scope="row">Bamboo straws</th>
+											<td>60</td>
+										</tr>
+                                        <tr>
+											<th scope="row">Recycled backpack</th>
+											<td>70</td>
+										</tr>
+                                        <tr>
+											<th scope="row">Recycled cotton socks</th>
+											<td>80</td>
+										</tr>
+                                        <tr>
+											<th scope="row">Travel mug</th>
+											<td>90</td>
+										</tr>
+                                        <tr>
+											<th scope="row">Reusable water bottle</th>
+											<td>100</td>
+										</tr>
+                                        <tr>
+											<th scope="row">Bamboo plates</th>
+											<td>110</td>
+										</tr>
+                                        <tr>
+											<th scope="row">Solar lamp</th>
+											<td>120</td>
+										</tr><tr>
+											<th scope="row">Solar power phone charger</th>
+											<td>130</td>
+										</tr>
+                                        <tr>
+											<th scope="row">Organic blankets</th>
+											<td>140</td>
+										</tr>
+                                        <tr>
+											<th scope="row">Water filter for faucet</th>
+											<td>150</td>
+										</tr>
 									</tbody>
 								</Table>
 							</Card>
@@ -211,7 +262,7 @@ class Home extends Component {
                 <Row>
                     <Col sm="6">
                         <Card body>
-                        <CardTitle>&nbsp; Changelog</CardTitle>
+                        <CardTitle><h3>&nbsp; Changelog</h3></CardTitle>
                         <Table>
                                 <thead>
                                 <tr>
