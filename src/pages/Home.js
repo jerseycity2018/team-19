@@ -3,7 +3,10 @@ import {Tabs, Tab} from 'react-bootstrap-tabs';
 import { Container, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Table } from 'reactstrap'
 import classnames from 'classnames';
 import '../App.css';
+<<<<<<< HEAD
 //import * as d3 from "d3";
+=======
+>>>>>>> 269fe9d584ba6385113262bc1f3ca5e830891243
 import PieChart from 'react-minimal-pie-chart';
 
 class Home extends Component {
@@ -28,7 +31,7 @@ class Home extends Component {
     return (
         <Container className="Home">
             <Container className="Greetings">
-                <h1> Hello!</h1>
+                <h1> Hello Fran!</h1>
             </Container>
             <Nav tabs>
                 <NavItem>
@@ -66,18 +69,21 @@ class Home extends Component {
             </Nav>
             <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="1">
-                    <PieChart
-                        data={[
-                            { title: 'One', value: 10, color: '#E38627' },
-                            { title: 'Two', value: 15, color: '#C13C37' },
-                            { title: 'Three', value: 20, color: '#6A2135' },
-                        ]}
-                    />;
-                    <svg width="720" height="120">
-                        <circle cx="40" cy="60" r="10"></circle>
-                        <circle cx="80" cy="60" r="10"></circle>
-                        <circle cx="120" cy="60" r="10"></circle>
-                    </svg>
+                    <Container className="usrData">
+                    <h4>Volunteered for 4 hours!</h4>
+                    <h4>Donated 20 pounds of compost!</h4>
+                    <h4>Refered 5 friends!</h4>
+                    </Container>
+                   <PieChart
+                   cx = {40}
+                   cy = {25}
+                   radius = {20}
+                     data={[
+                         { title: 'One', value: 15, color: '#78C776'},
+                         { title: 'Two', value: 10, color: '#6D3521'},
+                         ]}
+                         animate = {true}
+                        />
                     <Row>
                         <Col sm="12">
                         </Col>
