@@ -60,7 +60,7 @@ class LogIn extends Component {
           <label id="labelLogIn">Username </label>
           &nbsp;&nbsp;
           <input
-            id="LogInInput"
+            id="LogInInput1"
             type="text"
             placeholder="Enter email"
             value={this.state.email}
@@ -70,7 +70,7 @@ class LogIn extends Component {
           <label id="labelLogIn">Password </label>
           &nbsp;&nbsp;
           <input
-            id="LogInInput"
+            id="LogInInput2"
             type="password"
             placeholder="Enter password"
             value={this.state.password}
