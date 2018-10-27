@@ -41,6 +41,27 @@
   text-align: center;
 }
 
-#labelLogIn {
+.LogIn .media-object {
+  margin-left: 33%;
+  margin-top: 10em;
+  margin-bottom: 5em;
+}
+
+.SignUp {
+  background-image: url("./img/web_background.gif");
+  background-position-x: 40em;
+  height: 100vh;
+  width: 100vw;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+label#labelLogIn {
   color: #A1AF00;
+}
+
+label#labelSignUp {
+  color: #A1AF00;
+  font-size: 1em;
 }

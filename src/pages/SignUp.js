@@ -73,7 +73,7 @@ class SignUp extends Component {
       //zip is not required to be inputed?
     );
   }
-  
+
   createdAccountPrint(){
     if(this.state.createdAccount){
       return(
@@ -91,15 +91,12 @@ class SignUp extends Component {
     return null;
   }
   
-  
   render() {
-
     const isEnabled = this.canBeSubmitted();
-
     return (
-      <Container>
+      <Container className="SignUp">
       <form onSubmit={this.handleSubmit}>
-      <label>Email </label>
+      <label id="labelSignUp">Email </label>
       <input
           type="text"
           placeholder="Enter email"
@@ -107,7 +104,7 @@ class SignUp extends Component {
           onChange={this.handleEmailChange}
         />
         <br/>
-      <label>Password </label>
+      <label id="labelSignUp">Password </label>
       <input
           type="text"
           placeholder="Enter password"
@@ -115,7 +112,7 @@ class SignUp extends Component {
           onChange={this.handlePasswordChange}
         />
         <br/>
-        <label>First Name </label>
+        <label id="labelSignUp">First Name </label>
       <input
           type="text"
           placeholder="First Name"
@@ -123,7 +120,7 @@ class SignUp extends Component {
           onChange={this.handleFirstNameChange}
         />
         <br/>
-        <label>Last Name </label>
+        <label id="labelSignUp">Last Name </label>
       <input
           type="text"
           placeholder="Last Name"
@@ -131,7 +128,7 @@ class SignUp extends Component {
           onChange={this.handleLastNameChange}
         />
         <br/>
-        <label>Zipcode </label>
+        <label id="labelSignUp">Zipcode </label>
       <input
           type="text"
           placeholder="Zipcode"
@@ -139,14 +136,11 @@ class SignUp extends Component {
           onChange={this.handleZipChange}
         />
         <br/>
-        
         <button disabled={!isEnabled}>Create Account! </button>
         </form>
         {this.createdAccountPrint()}
       </Container>
     );
-
-
   }
 }
 

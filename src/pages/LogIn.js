@@ -51,7 +51,9 @@ class LogIn extends Component {
     
     return (
       <Container className="LogIn">
-        <Media object src={Logo} alt="GCF Logo" />
+        <Media middle href="#">
+          <Media object src={Logo} alt="GCF Logo" />
+        </Media>
         <form onSubmit={this.handleSubmit}>
           <label id="labelLogIn">Username </label>
           <input
