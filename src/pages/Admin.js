@@ -6,7 +6,6 @@ import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
 import PieChart from 'react-minimal-pie-chart';
-import Histogram from 'react-chart-histogram';
 
 import '../App.css';
 
@@ -114,26 +113,30 @@ class Admin extends Component {
         </Nav>
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
-              <Histogram
-                  xLabels={labels}
-                  yValues={data}
-                  width='400'
-                  height='200'
-                  options={options}
-              />
-            {/* <PieChart
+            <PieChart
                    cx = {20}
-                   cy = {15}
+                   cy = {20}
                    radius = {20}
                    data={[
                     { title: 'One', value: 10, color: '#E38627' },
                     { title: 'Two', value: 15, color: '#C13C37' },
                     { title: 'Four', value: 25, color:'#baf9ab' },
                     { title: 'Three', value: 20, color: '#6A2135' },
-                    { title: 'Five', value: 5, color: '#acf7f9' },
+                    { title: 'Five', value: 5, color: '#acf7f9' }
                   ]}
                   animate = {true}
-            /> */}
+            />
+            <PieChart
+                   cx = {40}
+                   cy = {20}
+                   radius = {20}
+                   data={[
+                    { title: 'One', value: 10, color: '#4286f4' },
+                    { title: 'Two', value: 20, color: '#f4f142' },
+                    { title: 'Four', value: 5, color:'#f4425f' }
+                  ]}
+                  animate = {true}
+            />
           </TabPane>
           <TabPane tabId="2">
             <form onSubmit={this.handleSubmitContribution}>
