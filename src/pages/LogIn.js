@@ -4,6 +4,8 @@ import {Container} from 'reactstrap';
 import {LinkContainer} from 'react-router-bootstrap';
 import { Media } from 'reactstrap';
 import Logo from '../img/gcf_logo.gif';
+import Twitter from '../img/twitter_button.png'
+import FB from '../img/fb_button.png'
 
 class LogIn extends Component {
   
@@ -58,6 +60,7 @@ class LogIn extends Component {
           <label id="labelLogIn">Username </label>
           &nbsp;&nbsp;
           <input
+            id="LogInInput"
             type="text"
             placeholder="Enter email"
             value={this.state.email}
@@ -67,6 +70,7 @@ class LogIn extends Component {
           <label id="labelLogIn">Password </label>
           &nbsp;&nbsp;
           <input
+            id="LogInInput"
             type="password"
             placeholder="Enter password"
             value={this.state.password}
@@ -80,6 +84,14 @@ class LogIn extends Component {
             <button id="LogInButton">Sign Up </button>
           </LinkContainer>
         </form>
+        <br />
+        <Media middle href="#">
+          <Media object src={Twitter} id="socialMediaButtons" alt="Login with Twitter" />
+        </Media>
+        <br />
+        <Media middle href="#">
+          <Media object src={FB} id="socialMediaButtons" alt="Login with FB" />
+        </Media>
       </Container>
     );
   }

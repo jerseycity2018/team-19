@@ -103,6 +103,7 @@ class SignUp extends Component {
             <label id="labelSignUp">Email </label>
             &nbsp;&nbsp;
             <input
+              id="SignUpInput"
               type="text"
               placeholder="Enter email"
               value={this.state.email}
@@ -112,6 +113,7 @@ class SignUp extends Component {
             <label id="labelSignUp">Password </label>
             &nbsp;&nbsp;
             <input
+              id="SignUpInput"
               type="text"
               placeholder="Enter password"
               value={this.state.password}
@@ -121,6 +123,7 @@ class SignUp extends Component {
             <label id="labelSignUp">First Name </label>
             &nbsp;&nbsp;
             <input
+              id="SignUpInput"
               type="text"
               placeholder="First Name"
               value={this.state.firstName}
@@ -130,6 +133,7 @@ class SignUp extends Component {
             <label id="labelSignUp">Last Name </label>
             &nbsp;&nbsp;
             <input
+              id="SignUpInput"
               type="text"
               placeholder="Last Name"
               value={this.state.lastName}
@@ -139,6 +143,7 @@ class SignUp extends Component {
             <label id="labelSignUp">Zipcode </label>
             &nbsp;&nbsp;
             <input
+              id="SignUpInput"
               type="text"
               placeholder="Zipcode"
               value={this.state.zip}

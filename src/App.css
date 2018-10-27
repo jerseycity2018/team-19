@@ -45,7 +45,7 @@
 
 .LogIn .media-object {
   margin-left: 33%;
-  margin-top: 7em;
+  margin-top: 4em;
   margin-bottom: 3em;
 }
 
@@ -53,6 +53,17 @@
   margin-left: 33%;
   margin-top: 3em;
   margin-bottom: 4em;
+}
+
+#socialMediaButtons.media-object {
+  margin-top: 0.05em;
+  margin-bottom: 0%;
+  margin-left: 23%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 7em;
+  font-size: 1.5em;
 }
 
 .SignUp {
@@ -98,4 +109,12 @@ label#labelSignUp {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+}
+
+#SignUpInput {
+  margin-bottom: 0.5em;
+}
+
+#LogInInput {
+  margin-bottom: 0.5em;
 }
