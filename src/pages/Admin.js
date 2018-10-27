@@ -85,6 +85,9 @@ class Admin extends Component {
     const isEnabledAdmin = this.canBeSubmittedAdmin();
     return (
       <Container className="Admin">
+        <Container className="Greetings">
+          <h1> Hello!</h1>
+        </Container>
         <Nav tabs>
           <NavItem>
             <NavLink
