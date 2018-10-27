@@ -42,7 +42,7 @@ class Home extends Component {
                 className={classnames({ active: this.state.activeTab === '2' })}
                 onClick={() => { this.toggle('2'); }}
                 >
-                Monthly Scoreboard
+                Scoreboard
                 </NavLink>
             </NavItem>
             <NavItem>
@@ -53,6 +53,14 @@ class Home extends Component {
                 Rewards
                 </NavLink>
             </NavItem>
+            <NavItem>
+            <NavLink
+            className={classnames({ active: this.state.activeTab === '3' })}
+            onClick={() => { this.toggle('4'); }}
+            >
+            Changelog
+            </NavLink>
+        </NavItem>
         </Nav>
         <TabContent activeTab={this.state.activeTab}>
             <TabPane tabId="1">
@@ -152,6 +160,50 @@ class Home extends Component {
                     </Col>
                     <Col>
                         <button>Submit reward request</button>
+                    </Col>
+                </Row>
+            </TabPane>
+            <TabPane tabId="4">
+                <Row>
+                    <Col sm="6">
+                        <Card body>
+                        <CardTitle id = "App">&nbsp; Changelog</CardTitle>
+                        <Table>
+                                <thead>
+                                <tr>
+                                    <th>Email</th>
+                                    <th>Work (hrs)</th>
+                                    <th>Compost (lbs)</th>
+                                    {/*<th>Task</th>*/}
+                                    <th>Score</th>
+                                    <th>Date</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>gmiller@nyc.com</td>
+                                    <td>7</td>
+                                    <td>32</td>
+                                    <td>39</td>
+                                    <td>10/22</td>
+                                </tr>
+                                <tr>
+                                    <td>kmorgan@jpm.com</td>
+                                    <td>5</td>
+                                    <td>29</td>
+                                    <td>34</td>
+                                    <td>10/21</td>
+                                </tr>
+                                <tr>
+                                    <td>chershey@nyc.com</td>
+                                    <td>2</td>
+                                    <td>31</td>
+                                    <td>33</td>
+                                    <td>10/21</td>
+                                </tr>
+                                </tbody>
+                            </Table>
+                        </Card>
                     </Col>
                 </Row>
             </TabPane>

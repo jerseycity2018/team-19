@@ -64,3 +64,14 @@ label#labelLogIn {
 label#labelSignUp {
   color: #A1AF00;
 }
+
+h5.card-title{
+  color: #A1AF00;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+th{
+  color: #542213;
+
+}
