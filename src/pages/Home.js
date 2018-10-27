@@ -3,11 +3,10 @@ import {Tabs, Tab} from 'react-bootstrap-tabs';
 import { Container, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Table } from 'reactstrap'
 import classnames from 'classnames';
 import '../App.css';
-//import * as d3 from "d3";
 import PieChart from 'react-minimal-pie-chart';
 
 class Home extends Component {
-    
+
     constructor(props) {
         super(props);
 
