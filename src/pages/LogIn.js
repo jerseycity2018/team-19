@@ -29,7 +29,7 @@ class LogIn extends Component {
       this.props.history.push('/home');
     }
     else if(username === 'admin' && password ==='pass'){
-      this.props.history.push('/signup');
+      this.props.history.push('/admin');
 
     }
     else{

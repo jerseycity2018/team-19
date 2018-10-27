@@ -76,23 +76,26 @@ label#labelSignUp {
   color: #A1AF00;
 }
 
-h5.card-title{
-  color: #A1AF00;
-  font-weight: bold;
-  font-size: 120%;
+#formSignUp {
+  margin-left: -25em!important;
+  text-align: right;
 }
 
-th{
-  color: #542213;
-
+#LogInButton {
+  color: white;
+  background-color: #A1AF00;
+  border-color: #A1AF00;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 4.5em;
 }
 
-.table-wrapper { 
-  overflow-x:scroll;
-  overflow-y:visible;
-}
-
-.first-child {
-  position: fixed;
-  left: 5px
+#SignUpButton {
+  color: white;
+  background-color: #A1AF00;
+  border-color: #A1AF00;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
