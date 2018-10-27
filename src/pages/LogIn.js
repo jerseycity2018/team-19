@@ -29,7 +29,7 @@ class LogIn extends Component {
       this.props.history.push('/home');
     }
     else if(username === 'admin' && password ==='pass'){
-      this.props.history.push('/signup');
+      this.props.history.push('/admin');
 
     }
     else{
@@ -51,27 +51,33 @@ class LogIn extends Component {
     
     return (
       <Container className="LogIn">
-        <Media object src={Logo} alt="GCF Logo" />
+        <Media middle href="#">
+          <Media object src={Logo} alt="GCF Logo" />
+        </Media>
         <form onSubmit={this.handleSubmit}>
           <label id="labelLogIn">Username </label>
+          &nbsp;&nbsp;
           <input
             type="text"
             placeholder="Enter email"
             value={this.state.email}
             onChange={this.handleEmailChange}
           />
-          <br/>
+          <br />
           <label id="labelLogIn">Password </label>
+          &nbsp;&nbsp;
           <input
             type="password"
             placeholder="Enter password"
             value={this.state.password}
             onChange={this.handlePasswordChange}
           />
-          <br/>
-          <button type="submit" disabled={!isEnabled}>Log In </button>
+          <br />
+          <br />
+          <button type="submit" id="LogInButton" disabled={!isEnabled}>Log In </button>
+          &nbsp;&nbsp;
           <LinkContainer to="signup">
-            <button>Sign Up </button>
+            <button id="LogInButton">Sign Up </button>
           </LinkContainer>
         </form>
       </Container>
