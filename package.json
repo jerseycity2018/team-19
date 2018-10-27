@@ -3,12 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "d3": "^5.7.0",
     "react": "^16.6.0",
     "react-apollo": "^2.1.11",
+<<<<<<< HEAD
     "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
     "sqlite3": "^4.0.3"
+=======
+    "react-bootstrap": "^0.32.4",
+    "react-bootstrap-tabs": "^1.0.2",
+    "react-dom": "^16.6.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.5",
+    "reactstrap": "^6.5.0"
+>>>>>>> 39b1e283886ef36ff9b1139902db4923b77a06ac
   },
   "scripts": {
     "start": "react-scripts start",
