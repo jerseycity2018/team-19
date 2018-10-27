@@ -63,7 +63,7 @@ class LogIn extends Component {
             value={this.state.email}
             onChange={this.handleEmailChange}
           />
-          <br/>
+          <br />
           <label id="labelLogIn">Password </label>
           &nbsp;&nbsp;
           <input
@@ -72,7 +72,7 @@ class LogIn extends Component {
             value={this.state.password}
             onChange={this.handlePasswordChange}
           />
-          <br/>
+          <br />
           <br />
           <button type="submit" disabled={!isEnabled}>Log In </button>
           &nbsp;&nbsp;

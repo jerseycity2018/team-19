@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "ajv": "^6.0.0",
+    "d3": "^5.7.0",
     "react": "^16.6.0",
     "react-bootstrap": "^0.32.4",
     "react-bootstrap-tabs": "^1.0.2",

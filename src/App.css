@@ -39,9 +39,16 @@
   align-content: center;
   justify-content: center;
   text-align: center;
+  line-height: 1.5em;
 }
 
 .LogIn .media-object {
+  margin-left: 33%;
+  margin-top: 10em;
+  margin-bottom: 5em;
+}
+
+.SignUp .media-object {
   margin-left: 33%;
   margin-top: 10em;
   margin-bottom: 5em;
