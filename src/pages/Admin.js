@@ -96,6 +96,7 @@ class Admin extends Component {
         <Nav tabs>
           <NavItem>
             <NavLink
+              id="nav-links"
               className={classnames({ active: this.state.activeTab === '1' })}
               onClick={() => { this.toggle('1'); }}
             >
@@ -104,6 +105,7 @@ class Admin extends Component {
           </NavItem>
           <NavItem>
             <NavLink
+              id="nav-links"
               className={classnames({ active: this.state.activeTab === '2' })}
               onClick={() => { this.toggle('2'); }}
             >
@@ -113,85 +115,97 @@ class Admin extends Component {
         </Nav>
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
-            <PieChart
-                   cx = {20}
-                   cy = {20}
-                   radius = {20}
-                   data={[
-                    { title: 'One', value: 10, color: '#E38627' },
-                    { title: 'Two', value: 15, color: '#C13C37' },
-                    { title: 'Four', value: 25, color:'#baf9ab' },
-                    { title: 'Three', value: 20, color: '#6A2135' },
-                    { title: 'Five', value: 5, color: '#acf7f9' }
-                  ]}
-                  animate = {true}
-            />
-            <PieChart
-                   cx = {40}
-                   cy = {20}
-                   radius = {20}
-                   data={[
-                    { title: 'One', value: 10, color: '#4286f4' },
-                    { title: 'Two', value: 20, color: '#f4f142' },
-                    { title: 'Four', value: 5, color:'#f4425f' }
-                  ]}
-                  animate = {true}
-            />
+            <Container id="AdminGraph">
+              <PieChart
+                    id="AdminGraph"
+                    cx = {40}
+                    cy = {20}
+                    radius = {20}
+                    data={[
+                      { title: 'One', value: 10, color: '#4286f4' },
+                      { title: 'Two', value: 20, color: '#f4f142' }
+                    ]}
+                    animate = {true}
+              />
+              <h4 id="GraphH4">Total Hours Volunteered 
+              <br /> vs. 
+              <br /> Total Pounds of Compost Donated</h4>
+              <PieChart
+                id="AdminGraph"
+                cx = {40}
+                cy = {23}
+                radius = {20}
+                data={[
+                  { title: 'One', value: 20, color: '#f26310'},
+                  { title: 'Two', value: 20, color: '#b90ef7'},
+                  { title: 'Three', value: 20, color: '#fc0c20'},
+                ]}
+                animate = {true}
+              />
+              <h4 id="GraphH4">Demographics of Farm Visits</h4>
+            </Container>
           </TabPane>
           <TabPane tabId="2">
-            <form onSubmit={this.handleSubmitContribution}>
-              <h3>Adding User Contribution </h3>
-              <label>User's Email</label>
-              <input
-                type="text"
-                placeholder="Enter email"
-                value={this.state.email}
-                onChange={this.handleEmailChange}
-              />
-              <br/>
-              <label>Date</label>
-              <DatePicker
-                selected={this.state.startDate}
-                onChange={this.handleChange}
-              />
-              <label>User Contribution</label>
-              <input
-                type="number"
-                placeholder="#of hours/lbs"
-                value={this.state.contributionQuantity}
-                onChange={this.handleContributionQuantityChange}
-              />
-              <select onChange={this.handleContributionTypeChange}>
-                <option selected disabled>Choose Type</option>
-                <option value="hours">hours</option>
-                <option value="lbs">lbs</option>
-              </select>
-              <br />
-              <label>Farm Attended</label>
-              <select onChange={this.handleFarmChange}>
-                <option selected disabled>Choose Farm</option>
-                <option value="farm1">Farm 1</option>
-                <option value="farm2">Farm 2</option>
-                <option value="farm3">Farm 3</option>
-                <option value="farm4">Farm 4</option>
-                <option value="farm5">Farm 5</option>
-                <option value="farm6">Farm 6</option>
-              </select>
-              <br/>
-              <button type="submit" disabled={!isEnabledContribution}>Add Contribution</button>
-            </form>
-            <h3>User Admin Access </h3>
-            <form>
-              <label>User's Email</label>
-              <input
-                type="text"
-                placeholder="Enter email"
-                value={this.state.email}
-                onChange={this.handleEmailChange}
-              />
-              <br/>
-              <button type="submit" disabled={!isEnabledAdmin}>Make Admin</button>
-            </form>
+            <Container id="AdminForms">
+              <form onSubmit={this.handleSubmitContribution}>
+                <h3>Adding User Contribution </h3>
+                <label>User's Email</label>
+                &nbsp;&nbsp;
+                <input
+                  type="text"
+                  placeholder="Enter email"
+                  value={this.state.email}
+                  onChange={this.handleEmailChange}
+                />
+                <br/>
+                <label>Date</label>
+                &nbsp;&nbsp;
+                <DatePicker
+                  selected={this.state.startDate}
+                  onChange={this.handleChange}
+                />
+                <label>User Contribution</label>
+                &nbsp;&nbsp;
+                <input
+                  type="number"
+                  placeholder="#of hours/lbs"
+                  value={this.state.contributionQuantity}
+                  onChange={this.handleContributionQuantityChange}
+                />
+                <select onChange={this.handleContributionTypeChange}>
+                  <option selected disabled>Choose Type</option>
+                  <option value="hours">hours</option>
+                  <option value="lbs">lbs</option>
+                </select>
+                <br />
+                <label>Farm Attended</label>
+                &nbsp;&nbsp;
+                <select onChange={this.handleFarmChange}>
+                  <option selected disabled>Choose Farm</option>
+                  <option value="farm1">Bay View Houses Farm</option>
+                  <option value="farm2">Howard Houses Farm</option>
+                  <option value="farm3">Red Hook Houses Farm</option>
+                  <option value="farm4">Wagner Houses Farm</option>
+                  <option value="farm5">Forest Houses</option>
+                  <option value="farm6">Mariners Harbor Houses Farm</option>
+                </select>
+                <br/>
+                <button type="submit" disabled={!isEnabledContribution}>Add Contribution</button>
+              </form>
+              <h3>User Admin Access </h3>
+              <form>
+                <label>User's Email</label>
+                &nbsp;&nbsp;
+                <input
+                  type="text"
+                  placeholder="Enter email"
+                  value={this.state.email}
+                  onChange={this.handleEmailChange}
+                />
+                <br/>
+                <button type="submit" disabled={!isEnabledAdmin}>Make Admin</button>
+              </form>
+            </Container>
           </TabPane>
         </TabContent>
       </Container>
