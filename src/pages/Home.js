@@ -4,22 +4,24 @@ import { Container, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, Ca
 import classnames from 'classnames';
 import '../App.css';
 
-class Home extends Component {constructor(props) {
-    super(props);
+class Home extends Component {
+    
+    constructor(props) {
+        super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      activeTab: '1'
-    };
-  }
-
-  toggle(tab) {
-    if (this.state.activeTab !== tab) {
-      this.setState({
-        activeTab: tab
-      });
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+            activeTab: '1'
+        };
     }
-  }
+
+    toggle(tab) {
+        if (this.state.activeTab !== tab) {
+            this.setState({
+                activeTab: tab
+            });
+        }
+    }
   render() {
     return (
       <div>
