@@ -3,10 +3,11 @@ import {Tabs, Tab} from 'react-bootstrap-tabs';
 import { Container, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Table } from 'reactstrap'
 import classnames from 'classnames';
 import '../App.css';
-//import * as d3 from "d3";
+import * as d3 from "d3";
+import PieChart from 'react-minimal-pie-chart';
 
 class Home extends Component {
-    
+
     constructor(props) {
         super(props);
 
@@ -57,6 +58,13 @@ class Home extends Component {
             </Nav>
             <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="1">
+                    <PieChart
+                        data={[
+                            { title: 'One', value: 10, color: '#E38627' },
+                            { title: 'Two', value: 15, color: '#C13C37' },
+                            { title: 'Three', value: 20, color: '#6A2135' },
+                        ]}
+                    />;
                     <svg width="720" height="120">
                         <circle cx="40" cy="60" r="10"></circle>
                         <circle cx="80" cy="60" r="10"></circle>
