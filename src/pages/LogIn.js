@@ -56,6 +56,7 @@ class LogIn extends Component {
         </Media>
         <form onSubmit={this.handleSubmit}>
           <label id="labelLogIn">Username </label>
+          &nbsp;&nbsp;
           <input
             type="text"
             placeholder="Enter email"
@@ -64,6 +65,7 @@ class LogIn extends Component {
           />
           <br/>
           <label id="labelLogIn">Password </label>
+          &nbsp;&nbsp;
           <input
             type="password"
             placeholder="Enter password"
@@ -71,7 +73,9 @@ class LogIn extends Component {
             onChange={this.handlePasswordChange}
           />
           <br/>
+          <br />
           <button type="submit" disabled={!isEnabled}>Log In </button>
+          &nbsp;&nbsp;
           <LinkContainer to="signup">
             <button>Sign Up </button>
           </LinkContainer>
