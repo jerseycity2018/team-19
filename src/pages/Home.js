@@ -70,6 +70,7 @@ class Home extends Component {
             <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="1">
                     <Container className="usrData">
+                    <h3>Your stats:</h3>
                     <h4>Volunteered for 4 hours!</h4>
                     <h4>Donated 20 pounds of compost!</h4>
                     <h4>Refered 2 friends!</h4>
