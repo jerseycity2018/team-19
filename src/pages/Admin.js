@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { Container } from 'reactstrap'
 import '../App.css';
 
 class Admin extends Component {
   render() {
     return (
-      <div className="App">
+      <Container>
         hey
-      </div>
+      </Container>
     );
   }
 }
