@@ -65,8 +65,8 @@ class Home extends Component {
                      data={[
                          { title: 'One', value: 15, color: '#78C776'},
                          { title: 'Two', value: 10, color: '#6D3521'},
-                         { title: 'Three', value: 10, color: '#E2F01B'},
                          ]}
+                         animate = {true}
                         />;
                     <Row>
                         <Col sm="12">
