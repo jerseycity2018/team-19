@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
+import PieChart from 'react-minimal-pie-chart';
 
 import '../App.css';
 
@@ -38,10 +39,10 @@ class Admin extends Component {
     }
     const { email, startDate,contributionQuantity,contributionType,farm } = this.state;
   }
-  
+
   canBeSubmittedContribution() {
     const { email, startDate,contributionQuantity,contributionType,farm } = this.state;
-    
+
     // alert(email+chosenDate+contributionQuantity+contributionType+farm);
     // console.log("email: "+email);
     // console.log("startDate: "+startDate);
@@ -57,7 +58,7 @@ class Admin extends Component {
       farm.length >0
     );
   };
- 
+
   canBeSubmittedAdmin() {
     const { email } = this.state;
 
@@ -108,18 +109,30 @@ class Admin extends Component {
         </Nav>
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
-            lmao
+            <PieChart
+                   cx = {20}
+                   cy = {15}
+                   radius = {10}
+                   data={[
+                    { title: 'One', value: 10, color: '#E38627' },
+                    { title: 'Two', value: 15, color: '#C13C37' },
+                    { title: 'Four', value: 25, color:'#baf9ab' },
+                    { title: 'Three', value: 20, color: '#6A2135' },
+                    { title: 'Five', value: 5, color: '#acf7f9' },
+                  ]}
+                  animate = {true}
+            />
           </TabPane>
           <TabPane tabId="2">
             <form onSubmit={this.handleSubmitContribution}>
-              <h3>Adding User Contribution </h3> 
+              <h3>Adding User Contribution </h3>
               <label>User's Email</label>
               <input
                 type="text"
                 placeholder="Enter email"
                 value={this.state.email}
                 onChange={this.handleEmailChange}
-              />            
+              />
               <br/>
               <label>Date</label>
               <DatePicker
@@ -132,7 +145,7 @@ class Admin extends Component {
                 placeholder="#of hours/lbs"
                 value={this.state.contributionQuantity}
                 onChange={this.handleContributionQuantityChange}
-              />       
+              />
               <select onChange={this.handleContributionTypeChange}>
                 <option selected disabled>Choose Type</option>
                 <option value="hours">hours</option>
@@ -152,7 +165,7 @@ class Admin extends Component {
               <br/>
               <button type="submit" disabled={!isEnabledContribution}>Add Contribution</button>
             </form>
-            <h3>User Admin Access </h3> 
+            <h3>User Admin Access </h3>
             <form>
               <label>User's Email</label>
               <input
@@ -160,7 +173,7 @@ class Admin extends Component {
                 placeholder="Enter email"
                 value={this.state.email}
                 onChange={this.handleEmailChange}
-              /> 
+              />
               <br/>
               <button type="submit" disabled={!isEnabledAdmin}>Make Admin</button>
             </form>
