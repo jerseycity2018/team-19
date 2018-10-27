@@ -23,7 +23,6 @@ class Admin extends Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-
   }
 
   handleEmailChange = (evt) => this.setState({ email: evt.target.value });
@@ -38,7 +37,6 @@ class Admin extends Component {
       return;
     }
     const { email, startDate,contributionQuantity,contributionType,farm } = this.state;
-
   }
   
   canBeSubmittedContribution() {
@@ -58,13 +56,10 @@ class Admin extends Component {
       contributionType.length >0 &&
       farm.length >0
     );
-
-    
   };
  
   canBeSubmittedAdmin() {
     const { email } = this.state;
-    
 
     return (
       email.length > 0
@@ -84,11 +79,10 @@ class Admin extends Component {
       });
     }
   }
-  render() {
 
+  render() {
     const isEnabledContribution = this.canBeSubmittedContribution();
     const isEnabledAdmin = this.canBeSubmittedAdmin();
-
     return (
       <Container className="Admin">
         <Nav tabs>
@@ -111,68 +105,62 @@ class Admin extends Component {
         </Nav>
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
-            
+            lmao
           </TabPane>
           <TabPane tabId="2">
-
-          <form onSubmit={this.handleSubmitContribution}>
-            <h3>Adding User Contribution </h3> 
-            <label>User's Email</label>
-            <input
-            type="text"
-            placeholder="Enter email"
-            value={this.state.email}
-            onChange={this.handleEmailChange}
-          />            <
-            br/>
-            <label>Date</label>
-            <DatePicker
-            selected={this.state.startDate}
-            onChange={this.handleChange}/>
-            <label>User Contribution</label>
-            <input
-            type="number"
-            placeholder="#of hours/lbs"
-            value={this.state.contributionQuantity}
-            onChange={this.handleContributionQuantityChange}
-          />       
-            <select onChange={this.handleContributionTypeChange}>
-              <option selected disabled>Choose Type</option>
-              <option value="hours">hours</option>
-              <option value="lbs">lbs</option>
-            </select>
-            <br />
-            <label>Farm Attended</label>
-
-            <select onChange={this.handleFarmChange} >
-              <option selected disabled>Choose Farm</option>
-              <option value="farm1">Farm 1</option>
-              <option value="farm2">Farm 2</option>
-              <option value="farm3">Farm 3</option>
-              <option value="farm4">Farm 4</option>
-              <option value="farm5">Farm 5</option>
-              <option value="farm6">Farm 6</option>
-
-            </select>
-            <br/>
-
-          <button type="submit" disabled={!isEnabledContribution}>Add Contribution</button>
+            <form onSubmit={this.handleSubmitContribution}>
+              <h3>Adding User Contribution </h3> 
+              <label>User's Email</label>
+              <input
+                type="text"
+                placeholder="Enter email"
+                value={this.state.email}
+                onChange={this.handleEmailChange}
+              />            
+              <br/>
+              <label>Date</label>
+              <DatePicker
+                selected={this.state.startDate}
+                onChange={this.handleChange}
+              />
+              <label>User Contribution</label>
+              <input
+                type="number"
+                placeholder="#of hours/lbs"
+                value={this.state.contributionQuantity}
+                onChange={this.handleContributionQuantityChange}
+              />       
+              <select onChange={this.handleContributionTypeChange}>
+                <option selected disabled>Choose Type</option>
+                <option value="hours">hours</option>
+                <option value="lbs">lbs</option>
+              </select>
+              <br />
+              <label>Farm Attended</label>
+              <select onChange={this.handleFarmChange}>
+                <option selected disabled>Choose Farm</option>
+                <option value="farm1">Farm 1</option>
+                <option value="farm2">Farm 2</option>
+                <option value="farm3">Farm 3</option>
+                <option value="farm4">Farm 4</option>
+                <option value="farm5">Farm 5</option>
+                <option value="farm6">Farm 6</option>
+              </select>
+              <br/>
+              <button type="submit" disabled={!isEnabledContribution}>Add Contribution</button>
             </form>
             <h3>User Admin Access </h3> 
             <form>
-            <label>User's Email</label>
-
-            <input
-            type="text"
-            placeholder="Enter email"
-            value={this.state.email}
-            onChange={this.handleEmailChange}
-          /> 
-            <br/>
-            <button type="submit" disabled={!isEnabledAdmin}>Make Admin</button>
-
-              </form>
-
+              <label>User's Email</label>
+              <input
+                type="text"
+                placeholder="Enter email"
+                value={this.state.email}
+                onChange={this.handleEmailChange}
+              /> 
+              <br/>
+              <button type="submit" disabled={!isEnabledAdmin}>Make Admin</button>
+            </form>
           </TabPane>
         </TabContent>
       </Container>
