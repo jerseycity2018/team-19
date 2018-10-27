@@ -168,13 +168,13 @@ class Home extends Component {
                     <Col sm="6">
                         <Card body>
                         <CardTitle id = "App">&nbsp; Changelog</CardTitle>
-                        <Table>
+                        <Table id = "table-wrapper" className = "first-child">
                                 <thead>
                                 <tr>
                                     <th>Email</th>
                                     <th>Work (hrs)</th>
                                     <th>Compost (lbs)</th>
-                                    {/*<th>Task</th>*/}
+                                    <th>Task</th>
                                     <th>Score</th>
                                     <th>Date</th>
                                 </tr>
