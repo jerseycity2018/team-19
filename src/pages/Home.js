@@ -23,14 +23,16 @@ class Home extends Component {constructor(props) {
   render() {
     return (
       <div>
-
+        <Container className="Greetings">
+            <h1> Hello!</h1>
+        </Container>
         <Nav tabs>
             <NavItem>
                 <NavLink
                 className={classnames({ active: this.state.activeTab === '1' })}
                 onClick={() => { this.toggle('1'); }}
                 >
-                Tab1
+                Home
                 </NavLink>
             </NavItem>
             <NavItem>
@@ -38,7 +40,15 @@ class Home extends Component {constructor(props) {
                 className={classnames({ active: this.state.activeTab === '2' })}
                 onClick={() => { this.toggle('2'); }}
                 >
-                Moar Tabs
+                Scoreboard
+                </NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink
+                className={classnames({ active: this.state.activeTab === '3' })}
+                onClick={() => { this.toggle('3'); }}
+                >
+                Rewards
                 </NavLink>
             </NavItem>
         </Nav>
@@ -65,6 +75,13 @@ class Home extends Component {constructor(props) {
                             <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
                             <Button>Go somewhere</Button>
                         </Card>
+                    </Col>
+                </Row>
+            </TabPane>
+            <TabPane tabId="3">
+                <Row>
+                    <Col sm="12">
+                        <h4>Tab 3 Contents</h4>
                     </Col>
                 </Row>
             </TabPane>
