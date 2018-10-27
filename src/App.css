@@ -77,6 +77,11 @@ label#labelSignUp {
   margin-bottom: 1.1em;
 }
 
+#formSignUp {
+  margin-left: -25em!important;
+  text-align: right;
+}
+
 #LogInButton {
   color: white;
   background-color: #A1AF00;
@@ -94,13 +99,4 @@ label#labelSignUp {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-}
-
-div#left.col {
-  width: 50%;
-  margin-left: 0%;
-}
-
-div#right.col {
-  width: 50%;
 }
