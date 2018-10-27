@@ -27,7 +27,7 @@ class Home extends Component {
     return (
         <Container className="Home">
             <Container className="Greetings">
-                <h1> Hello Fran!</h1>
+                <h1> Hello, Fran!</h1>
             </Container>
             <Nav tabs>
                 <NavItem>

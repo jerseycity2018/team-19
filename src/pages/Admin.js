@@ -86,7 +86,7 @@ class Admin extends Component {
     return (
       <Container className="Admin">
         <Container className="Greetings">
-          <h1> Hello Bahij!</h1>
+          <h1> Hello, Bahij!</h1>
         </Container>
         <Nav tabs>
           <NavItem>
