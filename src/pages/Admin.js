@@ -6,6 +6,7 @@ import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
 import PieChart from 'react-minimal-pie-chart';
+import Histogram from 'react-chart-histogram';
 
 import '../App.css';
 
@@ -84,6 +85,10 @@ class Admin extends Component {
   render() {
     const isEnabledContribution = this.canBeSubmittedContribution();
     const isEnabledAdmin = this.canBeSubmittedAdmin();
+
+    const labels = ['2016', '2017', '2018'];
+    const data = [324, 45, 672];
+    const options = { fillColor: '#FFFFFF', strokeColor: '#0000FF' };
     return (
       <Container className="Admin">
         <Container className="Greetings">
@@ -109,10 +114,17 @@ class Admin extends Component {
         </Nav>
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
-            <PieChart
+              <Histogram
+                  xLabels={labels}
+                  yValues={data}
+                  width='400'
+                  height='200'
+                  options={options}
+              />
+            {/* <PieChart
                    cx = {20}
                    cy = {15}
-                   radius = {10}
+                   radius = {20}
                    data={[
                     { title: 'One', value: 10, color: '#E38627' },
                     { title: 'Two', value: 15, color: '#C13C37' },
@@ -121,7 +133,7 @@ class Admin extends Component {
                     { title: 'Five', value: 5, color: '#acf7f9' },
                   ]}
                   animate = {true}
-            />
+            /> */}
           </TabPane>
           <TabPane tabId="2">
             <form onSubmit={this.handleSubmitContribution}>
