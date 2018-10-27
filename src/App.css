@@ -150,3 +150,7 @@ ul.nav.nav-tabs {
 .nav-tabs>li>a:hover {
   border-color: white;
 }
+
+.usrData {
+  text-align: center;
+}

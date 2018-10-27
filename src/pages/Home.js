@@ -95,7 +95,7 @@ class Home extends Component {
                     <Row>
                         <Col sm="6">
                             <Card body>
-                                <CardTitle>&nbsp; Farm Rankings</CardTitle>
+                                <CardTitle><h3>&nbsp; Farm Rankings</h3></CardTitle>
                                 <Table>
                                     <thead>
                                     <tr>
@@ -134,7 +134,7 @@ class Home extends Component {
                         </Col>
                         <Col sm="6">
                             <Card body>
-                            <CardTitle id = "App">&nbsp; Individual Rankings</CardTitle>
+                            <CardTitle><h3>&nbsp; Individual Rankings</h3></CardTitle>
                             <Table>
                                     <thead>
                                     <tr>
