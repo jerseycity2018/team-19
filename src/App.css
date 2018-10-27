@@ -30,3 +30,77 @@
     transform: rotate(360deg);
   }
 }
+
+.LogIn {
+  background-image: url("./img/web_background.gif");
+  background-position-x: 93em;
+  height: 100vh;
+  width: 100vw;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 1.4em;
+}
+
+.LogIn .media-object {
+  margin-left: 33%;
+  margin-top: 7em;
+  margin-bottom: 3em;
+}
+
+.SignUp .media-object {
+  margin-left: 33%;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+
+.SignUp {
+  background-image: url("./img/web_background.gif");
+  background-position-x: 93em;
+  height: 100vh;
+  width: 100vw;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 1.4em;
+}
+
+label#labelLogIn {
+  color: #A1AF00;
+  margin-bottom: 1.5em;
+}
+
+label#labelSignUp {
+  color: #A1AF00;
+  margin-bottom: 1.1em;
+}
+
+#LogInButton {
+  color: white;
+  background-color: #A1AF00;
+  border-color: #A1AF00;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 4.5em;
+}
+
+#SignUpButton {
+  color: white;
+  background-color: #A1AF00;
+  border-color: #A1AF00;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+div#left.col {
+  width: 50%;
+  margin-left: 0%;
+}
+
+div#right.col {
+  width: 50%;
+}
