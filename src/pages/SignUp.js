@@ -4,7 +4,6 @@ import {Container} from 'reactstrap';
 import '../App.css';
 
 class SignUp extends Component {
-  
   constructor() {
     super();
     this.state = {
@@ -90,55 +89,55 @@ class SignUp extends Component {
     }
     return null;
   }
-  
+
   render() {
     const isEnabled = this.canBeSubmitted();
     return (
       <Container className="SignUp">
-      <form onSubmit={this.handleSubmit}>
-      <label id="labelSignUp">Email </label>
-      <input
-          type="text"
-          placeholder="Enter email"
-          value={this.state.email}
-          onChange={this.handleEmailChange}
-        />
-        <br/>
-      <label id="labelSignUp">Password </label>
-      <input
-          type="text"
-          placeholder="Enter password"
-          value={this.state.password}
-          onChange={this.handlePasswordChange}
-        />
-        <br/>
-        <label id="labelSignUp">First Name </label>
-      <input
-          type="text"
-          placeholder="First Name"
-          value={this.state.firstName}
-          onChange={this.handleFirstNameChange}
-        />
-        <br/>
-        <label id="labelSignUp">Last Name </label>
-      <input
-          type="text"
-          placeholder="Last Name"
-          value={this.state.lastName}
-          onChange={this.handleLastNameChange}
-        />
-        <br/>
-        <label id="labelSignUp">Zipcode </label>
-      <input
-          type="text"
-          placeholder="Zipcode"
-          value={this.state.zip}
-          onChange={this.handleZipChange}
-        />
-        <br/>
-        <button disabled={!isEnabled}>Create Account! </button>
-        </form>
-        {this.createdAccountPrint()}
+        <form onSubmit={this.handleSubmit}>
+        <label id="labelSignUp">Email </label>
+        <input
+            type="text"
+            placeholder="Enter email"
+            value={this.state.email}
+            onChange={this.handleEmailChange}
+          />
+          <br/>
+        <label id="labelSignUp">Password </label>
+        <input
+            type="text"
+            placeholder="Enter password"
+            value={this.state.password}
+            onChange={this.handlePasswordChange}
+          />
+          <br/>
+          <label id="labelSignUp">First Name </label>
+        <input
+            type="text"
+            placeholder="First Name"
+            value={this.state.firstName}
+            onChange={this.handleFirstNameChange}
+          />
+          <br/>
+          <label id="labelSignUp">Last Name </label>
+        <input
+            type="text"
+            placeholder="Last Name"
+            value={this.state.lastName}
+            onChange={this.handleLastNameChange}
+          />
+          <br/>
+          <label id="labelSignUp">Zipcode </label>
+        <input
+            type="text"
+            placeholder="Zipcode"
+            value={this.state.zip}
+            onChange={this.handleZipChange}
+          />
+          <br/>
+          <button disabled={!isEnabled}>Create Account! </button>
+          </form>
+          {this.createdAccountPrint()}
       </Container>
     );
   }
