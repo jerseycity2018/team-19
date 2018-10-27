@@ -76,3 +76,31 @@ label#labelSignUp {
   color: #A1AF00;
   margin-bottom: 1.1em;
 }
+
+#LogInButton {
+  color: white;
+  background-color: #A1AF00;
+  border-color: #A1AF00;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 4.5em;
+}
+
+#SignUpButton {
+  color: white;
+  background-color: #A1AF00;
+  border-color: #A1AF00;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+div#left.col {
+  width: 50%;
+  margin-left: 0%;
+}
+
+div#right.col {
+  width: 50%;
+}

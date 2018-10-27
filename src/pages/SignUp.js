@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Media } from 'reactstrap';
+import { Container, Media, Row, Col } from 'reactstrap';
 import Logo from '../img/gcf_logo.gif';
 
 import '../App.css';
@@ -98,6 +98,14 @@ class SignUp extends Component {
         <Media middle href="#">
           <Media object src={Logo} alt="GCF Logo" />
         </Media>
+        <Row>
+          <Col id="left">
+            .col-6
+          </Col>
+          <Col id="right">
+            .col-6
+          </Col>
+        </Row>
         <form onSubmit={this.handleSubmit}>
         <label id="labelSignUp">Email </label>
         &nbsp;&nbsp;
@@ -145,7 +153,7 @@ class SignUp extends Component {
         />
         <br />
         <br />
-        <button disabled={!isEnabled}>Create Account! </button>
+        <button id="SignUpButton" disabled={!isEnabled}>Create Account! </button>
         </form>
         {this.createdAccountPrint()}
       </Container>

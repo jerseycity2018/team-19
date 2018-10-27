@@ -74,10 +74,10 @@ class LogIn extends Component {
           />
           <br />
           <br />
-          <button type="submit" disabled={!isEnabled}>Log In </button>
+          <button type="submit" id="LogInButton" disabled={!isEnabled}>Log In </button>
           &nbsp;&nbsp;
           <LinkContainer to="signup">
-            <button>Sign Up </button>
+            <button id="LogInButton">Sign Up </button>
           </LinkContainer>
         </form>
       </Container>
