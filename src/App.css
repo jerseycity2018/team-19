@@ -30,3 +30,17 @@
     transform: rotate(360deg);
   }
 }
+
+.LogIn {
+  background-image: url("./img/web_background.gif");
+  background-position-x: 40em;
+  height: 100vh;
+  width: 100vw;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#labelLogIn {
+  color: #A1AF00;
+}

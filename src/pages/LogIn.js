@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../App.css';
 import {Container} from 'reactstrap';
 import {LinkContainer} from 'react-router-bootstrap';
+import { Media } from 'reactstrap';
+import Logo from '../img/gcf_logo.gif';
 
 class LogIn extends Component {
   
@@ -44,43 +46,35 @@ class LogIn extends Component {
     );
   }
 
-
   render() {
-
     const isEnabled = this.canBeSubmitted();
-
-
+    
     return (
-      <Container>
-
-<form onSubmit={this.handleSubmit}>
-<label>Username </label>
-<input
-          type="text"
-          placeholder="Enter email"
-          value={this.state.email}
-          onChange={this.handleEmailChange}
-        />
-        <br/>
-        <label>Password </label>
-
-        <input
-          type="password"
-          placeholder="Enter password"
-          value={this.state.password}
-          onChange={this.handlePasswordChange}
-        />
-        <br/>
-
-
-<button type="submit" disabled={!isEnabled}>Log In </button>
-
-<LinkContainer to="signup">
-<button>Sign Up </button>
-</LinkContainer>
-</form>
-
-  </Container>
+      <Container className="LogIn">
+        <Media object src={Logo} alt="GCF Logo" />
+        <form onSubmit={this.handleSubmit}>
+          <label id="labelLogIn">Username </label>
+          <input
+            type="text"
+            placeholder="Enter email"
+            value={this.state.email}
+            onChange={this.handleEmailChange}
+          />
+          <br/>
+          <label id="labelLogIn">Password </label>
+          <input
+            type="password"
+            placeholder="Enter password"
+            value={this.state.password}
+            onChange={this.handlePasswordChange}
+          />
+          <br/>
+          <button type="submit" disabled={!isEnabled}>Log In </button>
+          <LinkContainer to="signup">
+            <button>Sign Up </button>
+          </LinkContainer>
+        </form>
+      </Container>
     );
   }
 }
