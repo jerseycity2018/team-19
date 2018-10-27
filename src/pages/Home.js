@@ -66,7 +66,7 @@ class Home extends Component {
                 <Row>
                     <Col sm="6">
                         <Card body>
-                            <CardTitle id = "App">&nbsp; Borough Rankings</CardTitle>
+                            <CardTitle>&nbsp; Borough Rankings</CardTitle>
                             <Table>
                                 <thead>
                                 <tr>
