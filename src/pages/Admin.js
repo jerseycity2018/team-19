@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Tabs, Tab} from 'react-bootstrap-tabs'
 import { Container, Nav, TabContent, TabPane, NavItem, NavLink } from 'reactstrap'
 import classnames from 'classnames'
 import { Link } from 'react-router-dom'
