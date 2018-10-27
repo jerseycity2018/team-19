@@ -6,16 +6,16 @@ class LogIn extends Component {
     return (
       <div className="App">
 
-    <label>Username </label>
-    <input type="text" name="username" required/><br/>
-    <label>Password </label>
-    <input type="text" name="password" required/><br/>
+<label>Username </label>
+<input type="text" name="username" required/><br/>
+<label>Password </label>
+<input type="text" name="password" required/><br/>
 
-    <button>Log In </button>
-    <button>Sign Up </button>
+<button>Log In </button>
+<button>Sign Up </button>
 
 
-    </div>
+</div>
     );
   }
 }
